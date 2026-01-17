@@ -12,9 +12,17 @@
       href="./styles/index.scss"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
-      rel="stylesheet"
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
       crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap"
+      rel="stylesheet"
     />
   </head>
   <body>
@@ -40,14 +48,15 @@
         </div>
 
         <div class="card__price">
-          <p class="card__price card__price--item">Price:</p>
-          <p class="card__price card__price--number">$2,199</p>
+          <p class="card__price card__price--label">Price:</p>
+          <p class="card__price card__price--value">$2,199</p>
         </div>
       </li>
-      <li data-qa="hover">
+      <li>
         <a
           class="card__buy"
           href="#"
+          data-qa="hover"
         >
           Buy
         </a>
