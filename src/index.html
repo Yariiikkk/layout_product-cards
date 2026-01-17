@@ -11,8 +11,81 @@
       rel="stylesheet"
       href="./styles/index.scss"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <h1>Product cards</h1>
+    <ul
+      class="card"
+      data-qa="card"
+    >
+      <li class="card__image"></li>
+      <li class="card__info">
+        <h1 class="card__title">
+          APPLE A1419 iMac 27" Retina 5K Monoblock (MNED2UA/A)
+        </h1>
+        <h2 class="card__code">Product code: 195434</h2>
+        <div class="card__stars">
+          <div class="stars stars--4">
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
+          </div>
+          <p class="card__reviews">Reviews: 5</p>
+        </div>
+
+        <div class="card__price">
+          <p class="card__price card__price--item">Price:</p>
+          <p class="card__price card__price--number">$2,199</p>
+        </div>
+      </li>
+      <li data-qa="hover">
+        <a
+          class="card__buy"
+          href="#"
+        >
+          Buy
+        </a>
+      </li>
+    </ul>
   </body>
 </html>
+
+<!-- <div
+      class="card"
+      data-qa="card"
+    >
+      <div class="card__image"></div>
+      <div class="card__info">
+        <h3 class="card__title">
+          APPLE A1419 iMac 27" Retina 5K Monoblock (MNED2UA/A)
+        </h3>
+        <p class="card__code">Product code: 195434</p>
+        <div class="card__stars">
+          <div class="stars stars--4">
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
+            <div class="stars__star"></div>
+          </div>
+          <div class="card__stars card__stars--reviews">Reviews: 5</div>
+        </div>
+        <div class="card__price">
+          <p class="card__price card__price--item">Price:</p>
+          <p class="card__price card__price--number">$2,199</p>
+        </div>
+      </div>
+      <a
+        data-qa="hover"
+        class="card__buy"
+        href="#"
+      >
+        Buy
+      </a>
+    </div> -->
