@@ -8,6 +8,9 @@
     background-repeat: no-repeat;
     background-image: url('../images/star.svg');
     margin-right: 4px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   @for $num from 1 through $number-of-stars {
